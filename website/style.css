@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+
+}
+
+.section-m1 {
+    margin: 40px 0px;
+}
+
+/*hader start*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(210, 217, 224);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav li {
+    list-style: none;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 19px;
+
+    color: rgb(24, 23, 23);
+}
+
+.old {
+    font-size: 30px;
+    color: black;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    color: red;
+    transition: 0.4s;
+}
+
+#nav li a:hover,
+#nav li a.active {
+
+    color: rgb(255, 21, 0);
+}
+
+/*Home page*/
+
+#hero {
+    background-image: url(mainbg.webp);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#hero h1 {
+    font-size: 40px;
+    color: rgb(5, 135, 133);
+
+}
+
+#hero h2 {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#hero p {
+    font-size: 19px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#hero button {
+    background-image: url(button.png);
+    padding: 14px 80px 14px 65px;
+    border: 0px;
+    background-color: transparent;
+    color: rgb(7, 126, 67);
+    font-size: 20px;
+    font-weight: 700;
+    background-repeat: no-repeat;
+
+
+}
+
+#hero .nihad {
+    display: flex;
+
+
+}
+
+#hero .nihad-img img {
+    height: 500px;
+}
+
+#hero .right {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.fe-box {
+    width: 180px;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 20px rgba(00, 00, 00, 0.03);
+    border: 1px solid rgb(231, 224, 224);
+    border-radius: 4px;
+    margin: 15px 0px;
+    text-align: center;
+
+
+}
+
+#feature .fe-box h6 {
+    color: rgb(11, 116, 116);
+    background-color: antiquewhite;
+    padding: 9px 8px 9px 8px;
+    border-radius: 4px;
+    line-height: 1;
+    font-size: 14px;
+}
+
+#feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: rgb(186, 220, 186)
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: rgb(170, 203, 201);
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: rgb(205, 209, 178);
+}
+
+#feature .fe-box:nth-child(5) h6 {
+    background-color: rgb(201, 175, 179)
+}
+
+#feature .fe-box:nth-child(6) h6 {
+    background-color: rgb(210, 185, 217);
+}
+
+
+/*products*/
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(199, 193, 193);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgb(0, 0, 0, 0.3);
+    margin: 15px 0px;
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0px;
+}
+
+#product1 .pro .des span {
+    font-size: 12px;
+    color: rgb(65, 65, 65);
+
+}
+
+#product1 .pro .des h5 {
+    font-size: 15px;
+    padding: 3px 3px 3px 0;
+}
+
+#product1 h1 {
+    font-size: 50px;
+}
+
+#product1 p {
+    font-size: 20px;
+    padding-top: 10px;
+    color: rgb(65, 65, 65);
+}
+
+#product1 .pro .des h4 {
+    color: rgb(76, 185, 100);
+    padding-top: 5px;
+}
+
+.pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro .des button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    width: 230px;
+    margin-top: 20px;
+    background-color: rgb(174, 227, 227);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: 1px solid rgb(62, 58, 58);
+}
+
+#product1 .pro .des a button:hover {
+    color: rgb(174, 227, 227);
+    background-color: black;
+}
+
+#product1 .pro .des h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 0);
+    padding-top: 10px;
+
+
+/*product details*/
+
+
+}
+#product1 .pro .des i{
+    color: rgb(255, 183, 0);
+}
+#product1 .pro img:hover{
+      transform: scale(1.05);    /* একটু zoom হবে */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+#product1 .pro-container .d-product{
+    margin-top: 50px;
+    color: red;
+    margin-right: 300px;
+     text-align: start;
+
+}
+
+/*shop page*/
+
+
+
+
+
+/*banner*/
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(b2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+}
+
+#banner h4 {
+    color: aliceblue;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+#banner h1 {
+    color: aliceblue;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#banner h1 span {
+    color: rgb(203, 241, 13);
+}
+
+#banner button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(183, 228, 159);
+    color: black;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+#banner a button:hover {
+    color: rgb(190, 159, 228);
+    ;
+    background-color: black;
+}
+
+
+
+/*footer*/
+
+.setcion-p1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+    justify-content: space-around;
+}
+
+.setcion-p1 .col h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.setcion-p1 .col h5 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.setcion-p1 .col h3 {
+    padding-top: 20px;
+}
+
+.setcion-p1 .col h4 {
+    color: rgb(114, 111, 111);
+    padding-bottom: 5px;
+}
+
+.setcion-p1 .about h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
+
+}
+
+.setcion-p1 .about {
+    margin-top: 92px;
+}
+
+.setcion-p1 .about h4 {
+    color: rgb(114, 111, 111);
+    padding-bottom: 5px;
+}
+
+.setcion-p1 .myaccount h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
+
+}
+
+.setcion-p1 .myaccount h4 {
+    color: rgb(114, 111, 111);
+    padding-bottom: 5px;
+}
+
+.setcion-p1 .myaccount {
+    margin-top: 92px;
+}
+
+.copy h4 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    color: rgb(114, 111, 111);
+    ;
+
+}
+
+/*shop page*/
+
+#page-header {
+    background-image: url(b1.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+
+}
+
+#page-header h1 {
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+/*pagination*/
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: rgb(96, 165, 159);
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+#pagination a:nth-child(3) {
+    margin-left: 5px;
+}
+
+
+#pagination a:hover {
+    color: red;
+    background-color: black;
+    transition: 0.3s;
+}
+
+#pagination a:hover,
+#pagination a.active {
+    color: red;
+}
+
+#hero a button:hover {
+    transition: 0.4s;
+    color: red;
+}
+
+/*single product*/
+
+
+/*Block page*/
+
+
+/*About page*/
+
+
+/*ipad resposive*/
